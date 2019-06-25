@@ -12,7 +12,7 @@ import WrapperUseCallback from './examples/useCallback'
 
 const App = () => {
 
-  const [hook, setHook] = useState('useMemo')
+  const [hook, setHook] = useState('useState')
 
   return (
     <div className="App">
@@ -24,6 +24,9 @@ const App = () => {
         <li><button className="button red" href="#" onClick={() => setHook('useReducer')}> Use Reducer</button></li>
         <li><button className="button green" href="#" onClick={() => setHook('useContext')}> Use Context</button></li>
         <li><button className="button green" href="#" onClick={() => setHook('useCallback')}> Use Callback</button></li>
+        <li><button className="button red" href="#" onClick={() => setHook('useImperativeHandle')}> Use useImperativeHandle</button></li>
+        <li><button className="button red" href="#" onClick={() => setHook('useLayoutEffect')}> Use useLayoutEffect</button></li>
+        <li><button className="button red" href="#" onClick={() => setHook('useDebugValue')}> Use useDebugValue</button></li>
       </ul>
 
       {hook === 'useState' && (<WrapperUseState />)}
