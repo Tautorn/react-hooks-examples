@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+}
+
+.square {
+  color: white;
+  height: 46px;
+  width: 100px;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.black {
+  background: black;
+}
+
+.button {
+  color: white;
+}
